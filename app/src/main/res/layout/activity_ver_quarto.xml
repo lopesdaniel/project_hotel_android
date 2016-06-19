@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/corBackground"
+tools:context="danieldesenvolvedor.com.br.projecthotel.VerQuarto">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Quarto"
+        android:id="@+id/lblMainCadSuite"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtId"
+        android:text="Número" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/txteditId"
+        android:enabled="false" />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/lblValor"
+        android:text="@string/lblValor" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/txtValor"/>
+    <!--android:ems="10"-->
+
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/lblTipo"
+        android:id="@+id/txtTipo" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnTipo"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/lblDisponibilidade"
+        android:id="@+id/txtDisponivel" />
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdgDisp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdbSim"
+            android:id="@+id/rdbSim"
+            android:checked="true"
+            android:theme="@style/AppTheme"
+            android:textColor="@color/abc_primary_text_material_light"
+            style="@android:style/Holo.Light.ButtonBar"
+            android:buttonTint="@color/colorPrimaryDark" />
+
+        <RadioButton
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdbNao"
+            android:id="@+id/rdbNao" />
+    </RadioGroup>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_width="151dp"
+        android:background="@color/corBotao"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:text="@string/btnAlterar"
+        android:id="@+id/btnAlterar"
+        style="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+        android:onClick="click_altera_quarto"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        style="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+        android:layout_marginTop="40dp"
+        android:layout_width="151dp"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/corBotao"
+        android:text="@string/btnDeletar"
+        android:id="@+id/btnDeletar"
+        android:onClick="click_del_quarto"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.12" />
+
+
+</LinearLayout>
+
+
+</ScrollView>

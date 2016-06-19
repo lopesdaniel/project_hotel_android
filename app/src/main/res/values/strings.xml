@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">HOTELSOFT</string>
+
+
+    <!-- Padrão -->
+    <string name="btnCadastrar">Cadastrar</string>
+    <string name="btnDeletar">Deletar</string>
+    <string name="btnAlterar">Alterar</string>
+    <string name="btnBuscar">Buscar</string>
+
+    <!-- Tela Inicial -->
+    <string name="btnCadQuarto">Cadastrar Quarto</string>
+    <string name="btnReserva">Registrar Reserva</string>
+    <string name="btnBuscarQuarto">Buscar Quartos</string>
+    <string name="btnListReservas">Lista Reservas</string>
+
+    <!-- Cadastro Quarto -->
+    <string name="lblValor">Valor</string>
+    <string name="lblTipo">Tipo</string>
+    <string name="lblDisponibilidade">Dísponivel ?</string>
+    <string name="rdbSim">Sim</string>
+    <string name="rdbNao">Não</string>
+
+
+
+
+</resources>
